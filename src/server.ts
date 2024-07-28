@@ -11,7 +11,7 @@ mongoose.connect(MonGO_URI)
 .then(() => {
     console.log('MongoDB connected...');
     app.listen(PORT, () => {
-        console.log('Server is running on port ${PORT}');
+        console.log(`Server is running on port ${PORT}`);
     });
 })
 
@@ -20,5 +20,5 @@ mongoose.connect(MonGO_URI)
 });
 
 app.get('/', (req, res) => {
-    res.send('Hello World!');
+    res.send('You are cuurently visiting this page');
   });
